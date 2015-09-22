@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             db.execSQL("delete from book where pages>?", new String[]{"400"});
         }else if (v.getId()==R.id.query_data){
             SQLiteDatabase db=dbHelper.getWritableDatabase();
+            Log.i("asdasd","dasdas");
 
         }
     }
